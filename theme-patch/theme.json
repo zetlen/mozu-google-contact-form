@@ -1,0 +1,56 @@
+{
+  widgets: [
+    {
+      "id": "contactform",
+      "displayName": "Contact Form",
+      "displayTemplate": "contact-form/contact-form",
+      "editViewFields": [
+        {
+          "xtype": "textfield",
+          "fieldLabel": "Spreadsheet ID",
+          "name": "spreadsheetId",
+          "anchor": "100%",
+          "required": true
+        },
+        {
+          "xtype": "textfield",
+          "fieldLabel": "Title",
+          "name": "title",
+          "anchor": "100%"
+        },
+        {
+          "xtype": "textfield",
+          "fieldLabel": "Form URL",
+          "name": "formUrl",
+          "anchor": "100%"
+        },
+        {
+          "xtype": "combobox",
+          "multiSelect": true,
+          "fieldLabel": "Subject Options",
+          "name": "subjectOptions",
+          "anchor": "100%",
+          "store": [
+            "Question about audio equipment",
+            "Question about shipping",
+            "Question about store policy",
+            "General inquiries"
+          ]
+        },
+        {
+          "xtype": "textfield",
+          "fieldLabel": "Admin Name",
+          "name": "contactName",
+          "anchor": "100%"
+        },
+        {
+          "xtype": "textfield",
+          "fieldLabel": "Admin Recipient",
+          "name": "adminEmail",
+          "anchor": "100%"
+        }
+      ],
+      "icon": "/resources/admin/widgets/17_comments.png"
+    }
+  ]
+}
