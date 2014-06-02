@@ -18,7 +18,7 @@ function doGet(request) {
   var adminEmail = request.parameters && request.parameters.adminEmail;
   var rowData = [];
   var id = request.parameters && request.parameters.spreadsheetId; // Spreadsheet id for responses
-  var contactName = request.parameter && request.parameters.contactName;
+  var contactName = request.parameters && request.parameters.contactName;
   var sheet;
   var newRow;
   var requiredFields = ['adminEmail', 'spreadsheetId','contactName','fullName','email','subject','message'];
