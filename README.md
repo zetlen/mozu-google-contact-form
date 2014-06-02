@@ -6,7 +6,7 @@ This is an example widget that provides a contact form as a widget to be dragged
 
 ## Instructions
 
-0. Login with or create a Google Drive account.
+0. Login with or create a Google Drive account. **It is important that this be an actual Google Account and not a Google Apps account managed for your domain. They look similar, but if you're in a Google Apps account, you will not be able to expose the script for anonymous use.
 
 0. While logged in to that Google Drive account, go to the [Google Apps Script start page](http://www.google.com/script/start/).
 
@@ -16,11 +16,15 @@ This is an example widget that provides a contact form as a widget to be dragged
 
 0. Click the Save icon and name your project something descriptive, like "Website Contact Form".
 
-0. In the Google Docs Publish menu, click "Deploy as web app..." or click the cloud icon in the toolbar.
+0. In the **Publish** menu, click "Deploy as web app..." or click the cloud icon in the toolbar.
 
-0. Publish version 1 of the app. Copy the URL it gives you; this is your form URL and you'll need it later.
+0. In the "Project version" text box, add a simple comment like "initial version" and click **Save New Version**. 
 
-0. You now need to authorize your new script with your own account. This is a non-intuitive process. In the "Run" menu, choose the "doGet" function. This will be the first time your script executes, and so a dialog box will appear asking you to authorize the script to run under your own account. Click "Approve". (The script will run and fail because no arguments were sent to it, but that doesn't matter.)
+0. In the "Execute the app as" dropdown, choose "me". In the "Who has access to the app" dropdown, choose "Anyone (even anonymous users).
+
+0. Publish the app. Copy the URL it gives you; this is your form URL and you'll need it later.
+
+0. You now need to authorize your new script with your own account. This is a non-intuitive process. In the **Run** menu, choose the **doGet** function. This will be the first time your script executes, and so a dialog box will appear asking you to authorize the script to run under your own account. Click **Approve**. (The script will run and fail because no arguments were sent to it, but that doesn't matter.)
 
 0. Go to your Google Drive homepage. Click **Create > Spreadsheet**.
 
